@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    //MARK: - PROPERTY
     @State private var isAnimating: Bool = false
     @State private var imageScale: CGFloat = 1
     @State private var imageOffset: CGSize = .zero
     
+    //MARK: - FUNCTION
     func resetImageState () {
         return withAnimation(.spring()) {
             imageScale = 1
@@ -19,9 +21,11 @@ struct ContentView: View {
         }
     }
     
+    //MARK: - CONTENT
     var body: some View {
         NavigationView{
             ZStack {
+                Color.clear
                 // MARK: - PAGE IMAGE
                 Image("magazine-front-cover")
                     .resizable()
@@ -65,6 +69,13 @@ struct ContentView: View {
                     isAnimating = true
                 }
             })
+            //MARK: - INFO PANEL
+            .overlay(
+                InfoPanelView(scale: imageScale, offset: imageOffset)
+                    .padding(.horizontal)
+                    .padding(.top, 30),
+                alignment: .top
+            )
         }
         .navigationViewStyle(.stack)
     }
