@@ -12,6 +12,7 @@
 		D00957032BD12CBA007876E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00957022BD12CBA007876E2 /* Assets.xcassets */; };
 		D00957062BD12CBA007876E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00957052BD12CBA007876E2 /* Preview Assets.xcassets */; };
 		D00957112BD13B44007876E2 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00957102BD13B44007876E2 /* InfoPanelView.swift */; };
+		D00957152BD143A5007876E2 /* ControlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00957142BD143A5007876E2 /* ControlImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D00957022BD12CBA007876E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D00957052BD12CBA007876E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D00957102BD13B44007876E2 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		D00957142BD143A5007876E2 /* ControlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				D00957102BD13B44007876E2 /* InfoPanelView.swift */,
+				D00957142BD143A5007876E2 /* ControlImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00957012BD12CB9007876E2 /* ContentView.swift in Sources */,
+				D00957152BD143A5007876E2 /* ControlImageView.swift in Sources */,
 				D00956FF2BD12CB9007876E2 /* PinchApp.swift in Sources */,
 				D00957112BD13B44007876E2 /* InfoPanelView.swift in Sources */,
 			);
